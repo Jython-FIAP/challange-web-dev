@@ -1,12 +1,13 @@
-import Entretenimento from "../assets/cards/entretenimento.png";
-import Inovacao from "../assets/cards/inovacao.png";
-import Planta from "../assets/cards/planta.png";
-import Velocimetro from "../assets/cards/velocimetro.png";
-import CarroE from "../assets/carro-e.webp";
-import Ficaps from "../assets/ficaps.png";
-import Button from "../components/Button";
-import ImageWithHoverText from "../components/ImageWithHoverText";
-import { Divider } from "./Divider";
+import Entretenimento from "../../assets/cards/entretenimento.png";
+import Inovacao from "../../assets/cards/inovacao.png";
+import Planta from "../../assets/cards/planta.png";
+import Velocimetro from "../../assets/cards/velocimetro.png";
+import CarroE from "../../assets/carro-e.webp";
+import Ficaps from "../../assets/ficaps.png";
+import Button from "../../components/Button";
+import ImageWithHoverText from "../../components/ImageWithHoverText";
+import Divider from "../Divider";
+import ComparisonCards from "./ComparisonCards";
 
 function Section({ children, gap = 5 }) {
 	return (
@@ -134,7 +135,23 @@ function Home() {
 					</div>
 				</div>
 			</article>
-			<div className="flex flex-col items-center justify-center h-96"></div>
+
+			<article className="p-20 flex flex-col gap-10">
+				<h1 className="text-5xl">Fórmula E x Fórmula 1</h1>
+				<p>
+					Assim que olhamos para ambas logo de cara é possível já ver
+					diferenças entre essas categorias de automobilismo.
+				</p>
+				<p>
+					Na Fórmula E, os carros de todas as equipes contam com o
+					mesmo chassi e eles usam motores 100% elétricos. Já na
+					Fórmula 1, todos podem desenvolver sua aerodinâmica, dentro
+					dos limites impostos pelo livro de regras, e os motores
+					usados são os turbo-híbridos, ou seja, usam combustível
+					sustentável e energia elétrica.
+				</p>
+				<ComparisonCards />
+			</article>
 		</main>
 	);
 }
