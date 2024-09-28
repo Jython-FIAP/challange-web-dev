@@ -11,7 +11,7 @@ function Header() {
 			className={`flex justify-between items-center bg-gray-600 h-${headerHeight} pt-4 -mb-${headerHeight}`}
 		>
 			<img src={logo} alt="Logo Formula E" />
-			<nav className="flex gap-10 mr-4 items-center">
+			<nav className="flex gap-10 mr-10 items-center">
 				<StyledNavLink to="/">Home</StyledNavLink>
 				<StyledNavLink to="/next">NextGen</StyledNavLink>
 				<StyledNavLink to="/projeto">Projeto</StyledNavLink>
