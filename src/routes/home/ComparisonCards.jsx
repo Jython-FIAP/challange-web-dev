@@ -19,7 +19,7 @@ function ComparisonCards() {
 			<CardWithAccordion
 				className="w-72"
 				title="Duração de Corrida"
-				content="Fórmula E: Tem uma duração mais curta, geralmente em torno de 45 minutos a 1 hora, devido à capacidade das baterias dos carros elétricos."
+				content="Fórmula E: Tem uma duração mais curta. As corridas duram cerca de 45 minutos a 1 hora, devido à limitação das baterias."
 				actionLabel="Veja a diferença"
 				accordionContent={
 					<p>
