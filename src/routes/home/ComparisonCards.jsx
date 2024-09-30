@@ -2,7 +2,7 @@ import CardWithAccordion from "../../components/CardWithAccordion";
 
 function ComparisonCards() {
 	return (
-		<div className="flex flex-wrap gap-10">
+		<div className="flex flex-wrap gap-20 mx-auto">
 			<CardWithAccordion
 				className="w-72"
 				title="Locais de Corrida"

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function CustomNavLink({ children, to, isButton, ...props }) {
+function StyledNavLink({ children, to, isButton, ...props }) {
 	return (
 		<NavLink
 			to={to}
@@ -16,4 +16,4 @@ function CustomNavLink({ children, to, isButton, ...props }) {
 	);
 }
 
-export default CustomNavLink;
+export default StyledNavLink;

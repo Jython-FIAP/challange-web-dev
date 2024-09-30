@@ -2,11 +2,12 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
+import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import "./index.css";
 import About from "./routes/About.jsx";
-import Home from "./routes/home/Home.jsx";
 import NotFound from "./routes/NotFound.jsx";
+import Home from "./routes/home/index.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
 			<>
 				<Header />
 				<NotFound />
+				<Footer />
 			</>
 		),
 		children: [
