@@ -1,6 +1,6 @@
 import { useRef } from "react";
+import Divider from "../components/Divider";
 import Section from "../components/Section";
-import Divider from "./Divider";
 
 function Next() {
 	let formRef = useRef(null);

@@ -8,6 +8,7 @@ import "./index.css";
 import Home from "./routes/home/index.jsx";
 import Next from "./routes/Next.jsx";
 import NotFound from "./routes/NotFound.jsx";
+import Projeto from "./routes/Projeto.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
 			{
 				path: "/next",
 				element: <Next />,
+			},
+			{
+				path: "/projeto",
+				element: <Projeto />,
 			},
 		],
 	},
