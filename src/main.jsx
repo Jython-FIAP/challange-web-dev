@@ -5,9 +5,9 @@ import App from "./App.jsx";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import "./index.css";
-import About from "./routes/About.jsx";
-import NotFound from "./routes/NotFound.jsx";
 import Home from "./routes/home/index.jsx";
+import Next from "./routes/Next.jsx";
+import NotFound from "./routes/NotFound.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
 				element: <Home />,
 			},
 			{
-				path: "/about",
-				element: <About />,
+				path: "/next",
+				element: <Next />,
 			},
 		],
 	},

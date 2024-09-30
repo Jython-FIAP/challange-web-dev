@@ -3,20 +3,11 @@ import { Link } from "react-router-dom";
 import CarroE from "../../assets/carro-e.webp";
 import Ficaps from "../../assets/ficaps.png";
 import Button from "../../components/Button";
+import Section from "../../components/Section";
 import Divider from "../Divider";
 import ComparisonCards from "./ComparisonCards";
 import ImageCards from "./ImageCards";
 import InfoCarousel from "./InfoCarousel";
-
-function Section({ children, gap = 5 }) {
-	return (
-		<section
-			className={`flex flex-col gap-${gap} items-center justify-center`}
-		>
-			{children}
-		</section>
-	);
-}
 
 function Home() {
 	const aboutArticleRef = useRef(null);
@@ -38,7 +29,6 @@ function Home() {
 				<Section gap={10}>
 					<h1 className="text-6xl">FÓRMULA E</h1>
 					<div>
-						{/* On click scroll to the about article */}
 						<Button
 							onClick={() =>
 								aboutArticleRef.current.scrollIntoView({
