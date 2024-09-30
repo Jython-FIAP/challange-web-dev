@@ -6,6 +6,7 @@ import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import "./index.css";
 import Home from "./routes/home/index.jsx";
+import Login from "./routes/Login.jsx";
 import Next from "./routes/Next.jsx";
 import NotFound from "./routes/NotFound.jsx";
 import Projeto from "./routes/Projeto.jsx";
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
 			{
 				path: "/",
 				element: <Home />,
+			},
+			{
+				path: "/login",
+				element: <Login />,
 			},
 			{
 				path: "/next",
